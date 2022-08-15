@@ -32,12 +32,6 @@ class Proxy {
     ): OnAuthRequiredResponse => {
         log(details);
 
-        const { challenger } = details;
-
-        if (challenger && challenger.host !== this.host) {
-            return {};
-        }
-
         if (!this.username || !this.password) {
             throw new Error('If hosts match then username and password must be set');
         }
@@ -63,13 +57,14 @@ class Proxy {
 
         const pacScript = `
 function FindProxyForURL(url, host) {
-    return "HTTPS ${hostname}:443";
+    return "PROXY ${hostname}";
 }`;
         const config: chrome.types.ChromeSettingSetDetails = {
             value: {
                 mode: 'pac_script',
                 pacScript: {
                     data: pacScript,
+                    mandatory: true,
                 },
             },
             scope: 'regular',
