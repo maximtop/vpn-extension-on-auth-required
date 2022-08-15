@@ -7,7 +7,7 @@
     "scripts": {
         "build": "webpack --config tasks/webpack.common.js",
         "watch": "yarn build --watch",
-        "lint": "eslint . --ext .js,.jsx,.ts,.tsx; tsc --project tsconfig.eslint.json --noEmit "
+        "lint": "eslint . --ext .ts; tsc --project tsconfig.eslint.json --noEmit"
     },
     "devDependencies": {
         "@babel/cli": "^7.12.0",
