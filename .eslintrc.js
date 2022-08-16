@@ -11,7 +11,7 @@ module.exports = {
         browser: true,
     },
     globals: {
-        adguard: 'readonly',
+        chrome: 'readonly',
     },
     settings: {
         'import/resolver': {
