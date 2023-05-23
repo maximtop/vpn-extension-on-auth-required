@@ -10,6 +10,8 @@ await ext.proxy.set("localhost:8080")
 ```
 
 ## To reproduce bug:
+- run the proxy servers: yarn proxy
+- install the extension from the extension directory
 - open https://maximtop.github.io/vpn-extension-on-auth-required or https://mail.google.com/mail/u/0/#inbox, every website using service worker for caching and sending requests through it
 - set host of proxy on background page calling
 ```javascript
