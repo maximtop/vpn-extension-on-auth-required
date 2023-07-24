@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "1VPN Extension OnAuthRequired Sample",
+    "short_name": "VPN Extension OnAuthRequired Sample",
+    "author": "maximtop@gmail.com",
+    "version": "0.0.1",
+    "description": "VPN Extension OnAuthRequired Sample",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "permissions": [
+        "proxy",
+        "webRequest",
+        "webRequestAuthProvider"
+    ]
+}

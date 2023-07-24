@@ -1,0 +1,13 @@
+{
+  "name": "mv3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Maxim Topciu",
+  "license": "MIT",
+  "scripts": {
+    "proxy": "node proxy"
+  },
+  "dependencies": {
+    "proxy": "^1.0.2"
+  }
+}

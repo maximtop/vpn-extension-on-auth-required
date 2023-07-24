@@ -25,3 +25,6 @@ await ext.proxy.set("localhost:8081")
 - reload opened page
 
 You should see the auth popup, and there is no `onAuthRequired` event fired.
+
+## MV3 sample
+MV3 sample is in the `mv3` directory. All instructions are in the `mv3/README.md` file.
